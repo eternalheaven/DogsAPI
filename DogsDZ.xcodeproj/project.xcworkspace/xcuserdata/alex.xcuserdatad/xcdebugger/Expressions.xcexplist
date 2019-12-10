@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in NetworkHelper.load&lt;A&gt;(resource:completion:):NetworkHelper.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in Resource&lt;A&gt;.init(url:method:headers:):Resource+Codable.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ResourceType.self">
+            </PersistentString>
+            <PersistentString
+               value = "JSONDecoder().decode(ResourceType.self, from: data)">
+            </PersistentString>
+            <PersistentString
+               value = "try JSONDecoder().decode(ResourceType.self, from: data)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
