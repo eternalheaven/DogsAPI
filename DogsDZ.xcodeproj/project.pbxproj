@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		FA044120239D578D009BA83E /* DogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA04411F239D578D009BA83E /* DogService.swift */; };
 		FA044124239D5F22009BA83E /* BreedsRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA044123239D5F22009BA83E /* BreedsRaw.swift */; };
+		FA2D366E23A11B8E00815532 /* DogImageService(по аналогии с Сережиным).swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D366D23A11B8E00815532 /* DogImageService(по аналогии с Сережиным).swift */; };
 		FA56B144239D758E004833F2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56B143239D758E004833F2 /* Reachability.swift */; };
 		FAA8978A239D7BAF00C54EA0 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA89789239D7BAF00C54EA0 /* Breed.swift */; };
 		FAA8978C239D826B00C54EA0 /* BreedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8978B239D826B00C54EA0 /* BreedBuilder.swift */; };
 		FAA89792239D84B200C54EA0 /* BreedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA89790239D84B200C54EA0 /* BreedTableViewCell.swift */; };
 		FAA89793239D84B200C54EA0 /* BreedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA89791239D84B200C54EA0 /* BreedTableViewCell.xib */; };
-		FAA8979723A0037300C54EA0 /* DogImageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8979623A0037300C54EA0 /* DogImageAPI.swift */; };
-		FAA8979B23A003B100C54EA0 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8979A23A003B100C54EA0 /* Image.swift */; };
+		FAA8979723A0037300C54EA0 /* DogImageService(from Randog).swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8979623A0037300C54EA0 /* DogImageService(from Randog).swift */; };
+		FAA8979B23A003B100C54EA0 /* BreedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8979A23A003B100C54EA0 /* BreedImage.swift */; };
 		FAC177DE239D3FBF007919F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC177DD239D3FBF007919F4 /* AppDelegate.swift */; };
 		FAC177E2239D3FBF007919F4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC177E1239D3FBF007919F4 /* MainViewController.swift */; };
 		FAC177E7239D3FC3007919F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC177E6239D3FC3007919F4 /* Assets.xcassets */; };
@@ -44,13 +45,14 @@
 /* Begin PBXFileReference section */
 		FA04411F239D578D009BA83E /* DogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogService.swift; sourceTree = "<group>"; };
 		FA044123239D5F22009BA83E /* BreedsRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsRaw.swift; sourceTree = "<group>"; };
+		FA2D366D23A11B8E00815532 /* DogImageService(по аналогии с Сережиным).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogImageService(по аналогии с Сережиным).swift"; sourceTree = "<group>"; };
 		FA56B143239D758E004833F2 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		FAA89789239D7BAF00C54EA0 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
 		FAA8978B239D826B00C54EA0 /* BreedBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedBuilder.swift; sourceTree = "<group>"; };
 		FAA89790239D84B200C54EA0 /* BreedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedTableViewCell.swift; sourceTree = "<group>"; };
 		FAA89791239D84B200C54EA0 /* BreedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreedTableViewCell.xib; sourceTree = "<group>"; };
-		FAA8979623A0037300C54EA0 /* DogImageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageAPI.swift; sourceTree = "<group>"; };
-		FAA8979A23A003B100C54EA0 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		FAA8979623A0037300C54EA0 /* DogImageService(from Randog).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogImageService(from Randog).swift"; sourceTree = "<group>"; };
+		FAA8979A23A003B100C54EA0 /* BreedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImage.swift; sourceTree = "<group>"; };
 		FAC177DA239D3FBF007919F4 /* Khrutskiy DZ 2 Dogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Khrutskiy DZ 2 Dogs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC177DD239D3FBF007919F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC177E1239D3FBF007919F4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -76,8 +78,9 @@
 		FA04411C239D574C009BA83E /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				FAA8979623A0037300C54EA0 /* DogImageService(from Randog).swift */,
 				FA04411F239D578D009BA83E /* DogService.swift */,
-				FAA8979623A0037300C54EA0 /* DogImageAPI.swift */,
+				FA2D366D23A11B8E00815532 /* DogImageService(по аналогии с Сережиным).swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -104,7 +107,7 @@
 			children = (
 				FAA89789239D7BAF00C54EA0 /* Breed.swift */,
 				FAA8978B239D826B00C54EA0 /* BreedBuilder.swift */,
-				FAA8979A23A003B100C54EA0 /* Image.swift */,
+				FAA8979A23A003B100C54EA0 /* BreedImage.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -228,7 +231,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FAC177D5239D3FBF007919F4 /* Build configuration list for PBXProject "Khrutskiy DZ 2 Dogs" */;
+			buildConfigurationList = FAC177D5239D3FBF007919F4 /* Build configuration list for PBXProject "DogsDZ" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -291,12 +294,13 @@
 				FA56B144239D758E004833F2 /* Reachability.swift in Sources */,
 				FAA8978A239D7BAF00C54EA0 /* Breed.swift in Sources */,
 				FA044124239D5F22009BA83E /* BreedsRaw.swift in Sources */,
+				FA2D366E23A11B8E00815532 /* DogImageService(по аналогии с Сережиным).swift in Sources */,
 				FAC177E2239D3FBF007919F4 /* MainViewController.swift in Sources */,
-				FAA8979723A0037300C54EA0 /* DogImageAPI.swift in Sources */,
+				FAA8979723A0037300C54EA0 /* DogImageService(from Randog).swift in Sources */,
 				FA044120239D578D009BA83E /* DogService.swift in Sources */,
 				FAC17828239D52BE007919F4 /* DogsViewController.swift in Sources */,
 				FAC177DE239D3FBF007919F4 /* AppDelegate.swift in Sources */,
-				FAA8979B23A003B100C54EA0 /* Image.swift in Sources */,
+				FAA8979B23A003B100C54EA0 /* BreedImage.swift in Sources */,
 				FAA8978C239D826B00C54EA0 /* BreedBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Khrutskiy DZ 2 Dogs/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Dogs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,7 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Khrutskiy DZ 2 Dogs/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Dogs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,7 +470,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FAC177D5239D3FBF007919F4 /* Build configuration list for PBXProject "Khrutskiy DZ 2 Dogs" */ = {
+		FAC177D5239D3FBF007919F4 /* Build configuration list for PBXProject "DogsDZ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAC177EC239D3FC3007919F4 /* Debug */,
