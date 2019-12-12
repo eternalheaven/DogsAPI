@@ -1,0 +1,6 @@
+module Pods_Khrutskiy_DZ_2_Dogs {
+  umbrella header "Pods-Khrutskiy DZ 2 Dogs-umbrella.h"
+
+  export *
+  module * { export * }
+}
