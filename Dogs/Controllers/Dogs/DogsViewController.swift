@@ -17,24 +17,18 @@ class DogsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         commonInit()
-        self.navigationItem.title = "Породы"
         
         service
-            .fetchAllBreeds(isSuccess: { (raw) in
+            .fetchAllBreeds(isSuccess: { [weak self] raw in
                 let breeds = BreedsBuilder.build(from: raw)
-                self.breeds = breeds
+                self?.breeds = breeds
                 DispatchQueue.main.async {
-                    self.tableView?.reloadData()
+                    self?.tableView?.reloadData()
                 }
-            },
+                },
                             isFailure: { _ in
                                 
             })
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-//        configureNavigationBar()
     }
     
     override func viewDidLayoutSubviews() {
@@ -46,7 +40,7 @@ class DogsViewController: UIViewController {
 extension DogsViewController {
     private func commonInit() {
         view.backgroundColor = .white
-//        configureNavigationBar()
+        configureNavigationBar()
         addTableView()
     }
     
@@ -62,16 +56,30 @@ extension DogsViewController {
         self.tableView = tableView
     }
     
-//    private func configureNavigationBar() {
-//
-//        self.navigationController?.navigationBar.backItem?.title = "Назад"
-//        self.navigationController?.navigationBar.topItem?.title = "Породы"
-//    }
+    private func configureNavigationBar() {
+        navigationItem.title = "Породы"
+    }
 }
 
 extension DogsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let performFetchImage = breeds[indexPath.row].imageURL.isEmpty
+        guard performFetchImage else { return }
+        service
+            .fetchBreedImg(for: breeds[indexPath.row].breed,
+                           isSuccess: { [weak self] model in
+                            self?.breeds[indexPath.row].setImageURL(model.message)
+                            DispatchQueue.main.async {
+                                self?.tableView?.reloadData()
+                            }
+                            
+                }, isFailure: {_ in
+                    
+            })
     }
 }
 

@@ -11,4 +11,9 @@ import Foundation
 struct Breed {
     let breed: String
     let subBreed: [String]
+    var imageURL: String
+    
+    mutating func setImageURL(_ url: String) {
+        self.imageURL = url
+    }
 }

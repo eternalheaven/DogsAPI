@@ -15,15 +15,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         commonInit()
-        self.navigationItem.title = "Главная"
-        // Do any additional setup after loading the view.
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-//        configureNavBar()
-    }
-    
+        
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         allDogsButton?.center = view.center
@@ -34,7 +27,7 @@ extension MainViewController {
     private func commonInit() {
         view.backgroundColor = .white
         addButton()
-        
+        configureNavBar()
     }
     
     private func addButton() {
@@ -49,11 +42,10 @@ extension MainViewController {
         view.addSubview(allDogsButton)
         self.allDogsButton = allDogsButton
     }
-//
-//    private func configureNavBar() {
-//        navigationController?.navigationBar.topItem?.title = "Породы"
-//        navigationController?.navigationBar.backItem?.title = "Назад"
-//    }
+
+    private func configureNavBar() {
+        navigationItem.title = "Главная"
+    }
     
     @objc
     private func didTapAllDogsButton() {

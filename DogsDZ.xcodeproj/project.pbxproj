@@ -7,51 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA01EE311BAEBA44C4CF0CB4 /* libPods-Khrutskiy DZ 2 Dogs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD9E64B0B9A6A394DD8DED1 /* libPods-Khrutskiy DZ 2 Dogs.a */; };
+		CDCD1EA923A1873700D6AA3D /* ResourceNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCD1EA223A1860E00D6AA3D /* ResourceNetworking.framework */; };
+		CDCD1EAA23A1873700D6AA3D /* ResourceNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDCD1EA223A1860E00D6AA3D /* ResourceNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA044120239D578D009BA83E /* DogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA04411F239D578D009BA83E /* DogService.swift */; };
 		FA044124239D5F22009BA83E /* BreedsRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA044123239D5F22009BA83E /* BreedsRaw.swift */; };
-		FA2D366E23A11B8E00815532 /* DogImageService(по аналогии с Сережиным).swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D366D23A11B8E00815532 /* DogImageService(по аналогии с Сережиным).swift */; };
 		FA56B144239D758E004833F2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56B143239D758E004833F2 /* Reachability.swift */; };
 		FAA8978A239D7BAF00C54EA0 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA89789239D7BAF00C54EA0 /* Breed.swift */; };
 		FAA8978C239D826B00C54EA0 /* BreedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8978B239D826B00C54EA0 /* BreedBuilder.swift */; };
 		FAA89792239D84B200C54EA0 /* BreedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA89790239D84B200C54EA0 /* BreedTableViewCell.swift */; };
 		FAA89793239D84B200C54EA0 /* BreedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA89791239D84B200C54EA0 /* BreedTableViewCell.xib */; };
-		FAA8979723A0037300C54EA0 /* DogImageService(from Randog).swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8979623A0037300C54EA0 /* DogImageService(from Randog).swift */; };
 		FAA8979B23A003B100C54EA0 /* BreedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8979A23A003B100C54EA0 /* BreedImage.swift */; };
 		FAC177DE239D3FBF007919F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC177DD239D3FBF007919F4 /* AppDelegate.swift */; };
 		FAC177E2239D3FBF007919F4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC177E1239D3FBF007919F4 /* MainViewController.swift */; };
 		FAC177E7239D3FC3007919F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC177E6239D3FC3007919F4 /* Assets.xcassets */; };
 		FAC177EA239D3FC3007919F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC177E8239D3FC3007919F4 /* LaunchScreen.storyboard */; };
-		FAC177FF239D445B007919F4 /* ResourceNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC177FC239D436B007919F4 /* ResourceNetworking.framework */; };
 		FAC17828239D52BE007919F4 /* DogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC17827239D52BE007919F4 /* DogsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FAC177FB239D436B007919F4 /* PBXContainerItemProxy */ = {
+		CDCD1EA123A1860E00D6AA3D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FAC177F6239D436B007919F4 /* ResourceNetworking.xcodeproj */;
+			containerPortal = CDCD1E9C23A1860E00D6AA3D /* ResourceNetworking.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 844E18E9238D4B1100D6F38B;
 			remoteInfo = ResourceNetworking;
 		};
-		FAC177FD239D436B007919F4 /* PBXContainerItemProxy */ = {
+		CDCD1EA323A1860E00D6AA3D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FAC177F6239D436B007919F4 /* ResourceNetworking.xcodeproj */;
+			containerPortal = CDCD1E9C23A1860E00D6AA3D /* ResourceNetworking.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 844E18F2238D4B1100D6F38B;
 			remoteInfo = ResourceNetworkingTests;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CDCD1EAB23A1873700D6AA3D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CDCD1EAA23A1873700D6AA3D /* ResourceNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		89919D42F7B0550D06C0B1C8 /* Pods-Khrutskiy DZ 2 Dogs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Khrutskiy DZ 2 Dogs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Khrutskiy DZ 2 Dogs/Pods-Khrutskiy DZ 2 Dogs.release.xcconfig"; sourceTree = "<group>"; };
+		90C11A487017D94503B97D97 /* Pods-Khrutskiy DZ 2 Dogs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Khrutskiy DZ 2 Dogs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Khrutskiy DZ 2 Dogs/Pods-Khrutskiy DZ 2 Dogs.debug.xcconfig"; sourceTree = "<group>"; };
+		ACD9E64B0B9A6A394DD8DED1 /* libPods-Khrutskiy DZ 2 Dogs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Khrutskiy DZ 2 Dogs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCD1E9C23A1860E00D6AA3D /* ResourceNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResourceNetworking.xcodeproj; path = Resource/ResourceNetworking.xcodeproj; sourceTree = "<group>"; };
 		FA04411F239D578D009BA83E /* DogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogService.swift; sourceTree = "<group>"; };
 		FA044123239D5F22009BA83E /* BreedsRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsRaw.swift; sourceTree = "<group>"; };
-		FA2D366D23A11B8E00815532 /* DogImageService(по аналогии с Сережиным).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogImageService(по аналогии с Сережиным).swift"; sourceTree = "<group>"; };
 		FA56B143239D758E004833F2 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		FAA89789239D7BAF00C54EA0 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
 		FAA8978B239D826B00C54EA0 /* BreedBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedBuilder.swift; sourceTree = "<group>"; };
 		FAA89790239D84B200C54EA0 /* BreedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedTableViewCell.swift; sourceTree = "<group>"; };
 		FAA89791239D84B200C54EA0 /* BreedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreedTableViewCell.xib; sourceTree = "<group>"; };
-		FAA8979623A0037300C54EA0 /* DogImageService(from Randog).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogImageService(from Randog).swift"; sourceTree = "<group>"; };
 		FAA8979A23A003B100C54EA0 /* BreedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImage.swift; sourceTree = "<group>"; };
 		FAC177DA239D3FBF007919F4 /* Khrutskiy DZ 2 Dogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Khrutskiy DZ 2 Dogs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC177DD239D3FBF007919F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +75,6 @@
 		FAC177E6239D3FC3007919F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC177E9239D3FC3007919F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC177EB239D3FC3007919F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAC177F6239D436B007919F4 /* ResourceNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ResourceNetworking.xcodeproj; sourceTree = "<group>"; };
 		FAC17827239D52BE007919F4 /* DogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,19 +83,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC177FF239D445B007919F4 /* ResourceNetworking.framework in Frameworks */,
+				CDCD1EA923A1873700D6AA3D /* ResourceNetworking.framework in Frameworks */,
+				BA01EE311BAEBA44C4CF0CB4 /* libPods-Khrutskiy DZ 2 Dogs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D23B3EC89C1B142362E6974 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90C11A487017D94503B97D97 /* Pods-Khrutskiy DZ 2 Dogs.debug.xcconfig */,
+				89919D42F7B0550D06C0B1C8 /* Pods-Khrutskiy DZ 2 Dogs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CDCD1E9D23A1860E00D6AA3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD1EA223A1860E00D6AA3D /* ResourceNetworking.framework */,
+				CDCD1EA423A1860E00D6AA3D /* ResourceNetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDCD1EAC23A1962D00D6AA3D /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8978B239D826B00C54EA0 /* BreedBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		CDCD1EAD23A1964200D6AA3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8979A23A003B100C54EA0 /* BreedImage.swift */,
+				FAA89789239D7BAF00C54EA0 /* Breed.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDCD1EAE23A1965E00D6AA3D /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				FA56B143239D758E004833F2 /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		FA04411C239D574C009BA83E /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				FAA8979623A0037300C54EA0 /* DogImageService(from Randog).swift */,
 				FA04411F239D578D009BA83E /* DogService.swift */,
-				FA2D366D23A11B8E00815532 /* DogImageService(по аналогии с Сережиным).swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -96,8 +153,8 @@
 		FA56B142239D757E004833F2 /* Net */ = {
 			isa = PBXGroup;
 			children = (
+				CDCD1EAE23A1965E00D6AA3D /* Reachability */,
 				FA04411C239D574C009BA83E /* Service */,
-				FA56B143239D758E004833F2 /* Reachability.swift */,
 			);
 			path = Net;
 			sourceTree = "<group>";
@@ -105,9 +162,9 @@
 		FAA89786239D7B9900C54EA0 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				FAA89789239D7BAF00C54EA0 /* Breed.swift */,
-				FAA8978B239D826B00C54EA0 /* BreedBuilder.swift */,
-				FAA8979A23A003B100C54EA0 /* BreedImage.swift */,
+				CDCD1EAD23A1964200D6AA3D /* Model */,
+				CDCD1EAC23A1962D00D6AA3D /* Builder */,
+				FA04411D239D5755009BA83E /* Raw */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -144,6 +201,7 @@
 				FAC177DC239D3FBF007919F4 /* Dogs */,
 				FAC177DB239D3FBF007919F4 /* Products */,
 				FAC177F5239D436B007919F4 /* Frameworks */,
+				1D23B3EC89C1B142362E6974 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,7 +218,6 @@
 			children = (
 				FAA89786239D7B9900C54EA0 /* Entity */,
 				FA56B142239D757E004833F2 /* Net */,
-				FA04411D239D5755009BA83E /* Raw */,
 				FAC17824239D5285007919F4 /* Controllers */,
 				FAC177DD239D3FBF007919F4 /* AppDelegate.swift */,
 				FAC177E6239D3FC3007919F4 /* Assets.xcassets */,
@@ -173,18 +230,10 @@
 		FAC177F5239D436B007919F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FAC177F6239D436B007919F4 /* ResourceNetworking.xcodeproj */,
+				CDCD1E9C23A1860E00D6AA3D /* ResourceNetworking.xcodeproj */,
+				ACD9E64B0B9A6A394DD8DED1 /* libPods-Khrutskiy DZ 2 Dogs.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FAC177F7239D436B007919F4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FAC177FC239D436B007919F4 /* ResourceNetworking.framework */,
-				FAC177FE239D436B007919F4 /* ResourceNetworkingTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		FAC17824239D5285007919F4 /* Controllers */ = {
@@ -203,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAC177EE239D3FC3007919F4 /* Build configuration list for PBXNativeTarget "Khrutskiy DZ 2 Dogs" */;
 			buildPhases = (
+				4CBFCF6080FF09A7B365F051 /* [CP] Check Pods Manifest.lock */,
 				FAC177D6239D3FBF007919F4 /* Sources */,
 				FAC177D7239D3FBF007919F4 /* Frameworks */,
 				FAC177D8239D3FBF007919F4 /* Resources */,
+				CDCD1EAB23A1873700D6AA3D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,8 +295,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = FAC177F7239D436B007919F4 /* Products */;
-					ProjectRef = FAC177F6239D436B007919F4 /* ResourceNetworking.xcodeproj */;
+					ProductGroup = CDCD1E9D23A1860E00D6AA3D /* Products */;
+					ProjectRef = CDCD1E9C23A1860E00D6AA3D /* ResourceNetworking.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -256,18 +307,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		FAC177FC239D436B007919F4 /* ResourceNetworking.framework */ = {
+		CDCD1EA223A1860E00D6AA3D /* ResourceNetworking.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ResourceNetworking.framework;
-			remoteRef = FAC177FB239D436B007919F4 /* PBXContainerItemProxy */;
+			remoteRef = CDCD1EA123A1860E00D6AA3D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FAC177FE239D436B007919F4 /* ResourceNetworkingTests.xctest */ = {
+		CDCD1EA423A1860E00D6AA3D /* ResourceNetworkingTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ResourceNetworkingTests.xctest;
-			remoteRef = FAC177FD239D436B007919F4 /* PBXContainerItemProxy */;
+			remoteRef = CDCD1EA323A1860E00D6AA3D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -285,6 +336,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4CBFCF6080FF09A7B365F051 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Khrutskiy DZ 2 Dogs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAC177D6239D3FBF007919F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -294,9 +370,7 @@
 				FA56B144239D758E004833F2 /* Reachability.swift in Sources */,
 				FAA8978A239D7BAF00C54EA0 /* Breed.swift in Sources */,
 				FA044124239D5F22009BA83E /* BreedsRaw.swift in Sources */,
-				FA2D366E23A11B8E00815532 /* DogImageService(по аналогии с Сережиным).swift in Sources */,
 				FAC177E2239D3FBF007919F4 /* MainViewController.swift in Sources */,
-				FAA8979723A0037300C54EA0 /* DogImageService(from Randog).swift in Sources */,
 				FA044120239D578D009BA83E /* DogService.swift in Sources */,
 				FAC17828239D52BE007919F4 /* DogsViewController.swift in Sources */,
 				FAC177DE239D3FBF007919F4 /* AppDelegate.swift in Sources */,
@@ -435,6 +509,7 @@
 		};
 		FAC177EF239D3FC3007919F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90C11A487017D94503B97D97 /* Pods-Khrutskiy DZ 2 Dogs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +527,7 @@
 		};
 		FAC177F0239D3FC3007919F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89919D42F7B0550D06C0B1C8 /* Pods-Khrutskiy DZ 2 Dogs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

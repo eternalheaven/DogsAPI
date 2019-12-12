@@ -12,7 +12,7 @@ class BreedsBuilder {
     static func build(from raw: BreedsRaw) -> [Breed] {
         var breeds = [Breed]()
         raw.message.forEach { (key, value) in
-            breeds.append(Breed(breed: key, subBreed: value))
+            breeds.append(Breed(breed: key, subBreed: value, imageURL: ""))
         }
   
         return breeds

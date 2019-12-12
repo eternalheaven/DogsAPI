@@ -15,13 +15,25 @@ class DogService {
     private init() { }
     static let instance = DogService()
     
-    private struct EndPoint {
-        static let allBreeds = "https://dog.ceo/api/breeds/list/all"
+     enum EndPoint {
+        case allBreeds
+        case randomImageForBreed(String)
+        
+        var endPoint: String {
+            switch self {
+            case .allBreeds:
+                return "https://dog.ceo/api/breeds/list/all"
+            case .randomImageForBreed(let breed):
+                return "https://dog.ceo/api/breed/\(breed)/images/random"
+            }
+        }
     }
-  
+    
+    
     func fetchAllBreeds(isSuccess: @escaping (BreedsRaw) -> Void,
                         isFailure: @escaping (Error) -> Void) {
-        guard let url = URL(string: EndPoint.allBreeds) else { return }
+        let endPoint = EndPoint.allBreeds.endPoint
+        guard let url = URL(string: endPoint) else { return }
         let breedsResource = Resource<BreedsRaw>(url: url, headers: nil)
         load(resource: breedsResource,
              completion: { operation in
@@ -30,6 +42,24 @@ class DogService {
                     isSuccess(raw)
                 case .failure(let error):
                 print(error.localizedDescription)
+                    isFailure(error)
+                }
+        })
+    }
+    
+    func fetchBreedImg(for breed: String,
+                       isSuccess: @escaping (BreedImage) -> Void,
+                       isFailure: @escaping (Error) -> Void) {
+        let endPoint = EndPoint.randomImageForBreed(breed).endPoint
+        guard let url = URL(string: endPoint) else { return }
+        let imgBreedResource = Resource<BreedImage>(url: url, headers: nil)
+        load(resource: imgBreedResource,
+             completion: { operation in
+                switch operation {
+                case .success(let raw):
+                    isSuccess(raw)
+                case .failure(let error):
+                    print(error.localizedDescription)
                     isFailure(error)
                 }
         })
